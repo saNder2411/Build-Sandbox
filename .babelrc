@@ -2,11 +2,10 @@
   "presets": [[
     "@babel/env",
     {
+      "corejs": 3,
+      "useBuiltIns": "usage",
       "debug": true,
-      "targets": [
-        "> 0.3%",
-        "not ie > 0"
-      ]
+      "modules": false
     }
     ]],
   "plugins": ["@babel/proposal-class-properties"]
