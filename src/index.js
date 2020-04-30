@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import img from './react.png';
-import './main.css';
+import './main.scss';
 
 const App = () => {
   return (

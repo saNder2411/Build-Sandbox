@@ -3,11 +3,13 @@ module.exports = {
 
   module: {
     rules: [
+      //Loading JS
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: [{loader: `babel-loader`}],
       },
+      //Loading image
       {
         test: /\.(png|jpeg|jpg|gif|ico)$/,
         use: [
@@ -20,6 +22,7 @@ module.exports = {
           }
         ],
       },
+      //Loading fonts
       {
         test: /\.(ttf|otf|eot|woff|woff2)$/,
         use: [
@@ -32,9 +35,15 @@ module.exports = {
           }
         ],
       },
+      //Loading CSS
       {
         test: /\.(css)$/,
         use: [{loader: `style-loader`}, {loader: `css-loader`}],
+      },
+      //Loading SASS/SCSS
+      {
+        test: /\.(scss|sass)$/,
+        use: [{loader: `style-loader`}, {loader: `css-loader`}, {loader: `sass-loader`}],
       }
     ]
   }
