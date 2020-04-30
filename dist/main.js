@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./log */ \"./src/log.js\");\n/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./calc */ \"./src/calc.js\");\n\n\n\nconst calc = new _calc__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nconst log = new _log__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n\nlog.log(calc.add(1, 2, 3));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./log */ \"./src/log.js\");\n/* harmony import */ var _calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./calc */ \"./src/calc.js\");\n/* harmony import */ var _react_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./react.png */ \"./src/react.png\");\n\n\n\n\nconst calc = new _calc__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\nconst log = new _log__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\n\nlog.log(calc.add(1, 2, 3));\n\nconst el = document.createElement(`img`);\nel.src = _react_png__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\ndocument.body.appendChild(el);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -119,6 +119,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _log
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Log; });\nclass Log {\n\n  log(msg) {\n    console.log(`===========`);\n    console.log(msg);\n    console.log(`===========`);\n  }\n}\n\n//# sourceURL=webpack:///./src/log.js?");
+
+/***/ }),
+
+/***/ "./src/react.png":
+/*!***********************!*\
+  !*** ./src/react.png ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/react-21cabc1.png\");\n\n//# sourceURL=webpack:///./src/react.png?");
 
 /***/ })
 
