@@ -1,12 +1,7 @@
-class App {
+import Log from './log';
+import Calc from './calc';
 
-  run = async (name = `World`) => {
-    console.log(`Hello ${name}`);
-    console.log([1, 2, [3, 4]].flat());
-  };
-}
+const calc = new Calc();
+const log = new Log();
 
-const app = new App();
-app.run()
-  .then(() => console.log(`Done`))
-  .catch(() => console.log(`Error`));
+log.log(calc.add(1, 2, 3));
