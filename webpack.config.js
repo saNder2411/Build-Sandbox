@@ -4,6 +4,11 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: [{loader: `babel-loader`}],
+      },
+      {
         test: /\.(png|jpeg|jpg|gif|ico)$/,
         use: [
           {
@@ -13,7 +18,7 @@ module.exports = {
               name: `[name]-[sha1:hash:7].[ext]`,
             },
           }
-        ]
+        ],
       },
       {
         test: /\.(ttf|otf|eot|woff|woff2)$/,
@@ -25,7 +30,11 @@ module.exports = {
               name: `[name].[ext]`,
             },
           }
-        ]
+        ],
+      },
+      {
+        test: /\.(css)$/,
+        use: [{loader: `style-loader`}, {loader: `css-loader`}],
       }
     ]
   }
